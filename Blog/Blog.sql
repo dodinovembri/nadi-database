@@ -25,5 +25,5 @@ ALTER TABLE IF EXISTS public.blog
     OWNER to postgres;
 
 INSERT INTO public.blog(
-    id, status, sort, created_at, modified_at, creator_id, modifier_id, age_qualifying_type_id, min_age, max_age)
-    VALUES ('597e322c-7536-4786-81ce-d9bd818e501c', 1, 1, now(), null, null, null, '2160e512-59fa-4f5c-8b25-424b7bfe4346', '0', '5');
+    id, status, sort, created_at, modified_at, creator_id, modifier_id, blog_category_id, title, short_description, date, description)
+    VALUES ('133b5434-31e9-4826-ac3c-3d13d73a7ee9', 1, 1, now(), null, null, null, 'ddc4165d-d078-4716-a282-e07398c3e871', 'Above and beyond', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsum, optio, impedit, adipisci quis sare recusandae nostrum laboriosam mollitia dolorem ah corporis dolore!', '2022-11-13', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsum, optio, impedit, adipisci quis sare recusandae nostrum laboriosam mollitia dolorem ah corporis dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ipsum, optio, impedit, adipisci quis sare recusandae nostrum laboriosam mollitia dolorem ah corporis dolore!');

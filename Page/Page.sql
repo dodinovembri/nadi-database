@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS public.page
     modified_at timestamp with time zone,
     creator_id character varying(36) COLLATE pg_catalog."default",
     modifier_id character varying(36) COLLATE pg_catalog."default",
-    page_code character varying(3) COLLATE pg_catalog."default",
+    page_code text COLLATE pg_catalog."default",
     page_name text COLLATE pg_catalog."default",
     slug text COLLATE pg_catalog."default",
     html_title text COLLATE pg_catalog."default",
