@@ -11,10 +11,8 @@ CREATE TABLE IF NOT EXISTS public.blog_menu
     modified_at timestamp with time zone,
     creator_id character varying(36) COLLATE pg_catalog."default",
     modifier_id character varying(36) COLLATE pg_catalog."default",
-    page_id character varying(36) COLLATE pg_catalog."default",
-    social_media_name text COLLATE pg_catalog."default",
-    icon_name text COLLATE pg_catalog."default",
-    link_url text COLLATE pg_catalog."default",
+    blog_id character varying(36) COLLATE pg_catalog."default",
+    menu_id character varying(36) COLLATE pg_catalog."default",    
     description text COLLATE pg_catalog."default",
     CONSTRAINT blog_menu_pkey PRIMARY KEY (id)
 )
