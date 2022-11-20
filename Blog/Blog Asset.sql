@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS public.blog_asset
     modified_at timestamp with time zone,
     creator_id character varying(36) COLLATE pg_catalog."default",
     modifier_id character varying(36) COLLATE pg_catalog."default",
-    blog_id
-    multimedia_description_id
+    blog_id character varying(36) COLLATE pg_catalog."default",
+    multimedia_description_id character varying(36) COLLATE pg_catalog."default",
     CONSTRAINT blog_asset_pkey PRIMARY KEY (id)
 )
 
