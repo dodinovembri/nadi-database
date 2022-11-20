@@ -93,6 +93,7 @@ BEGIN
 			AND company_blog.status != 0
 			AND blog.status != 0
 			AND blog_menu.status != 0
+			AND blog_menu.parent_blog_menu_id IS NULL
 	LOOP
 		v_menu := jsonb_build_object(
 			v_raw_menu.id, jsonb_build_object(
