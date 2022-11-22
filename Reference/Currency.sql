@@ -27,4 +27,4 @@ CREATE TABLE IF NOT EXISTS public.currency
 TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.currency
-    OWNER to sa;
+    OWNER to postgres;

@@ -13,15 +13,14 @@ CREATE TABLE IF NOT EXISTS public.price
     modifier_id character varying(36) COLLATE pg_catalog."default",
     app_price_id character varying(36) COLLATE pg_catalog."default",
     country_id character varying(36) COLLATE pg_catalog."default", -- Negara
-    province_id character varying(36) COLLATE pg_catalog."default", -- Provinsi
-    state_province_id character varying(36) COLLATE pg_catalog."default", -- State PRovinsi
+    state_province_id character varying(36) COLLATE pg_catalog."default", -- State Provinsi
     city_id character varying(36) COLLATE pg_catalog."default", -- City
     district_id character varying(36) COLLATE pg_catalog."default", -- Kabupaten
     sub_district_id character varying(36) COLLATE pg_catalog."default", -- Kecamatan
     urban_village_id character varying(36) COLLATE pg_catalog."default", -- Kelurahan
     village_id character varying(36) COLLATE pg_catalog."default", -- Desa
-    hamlet_number text COLLATE pg_catalog."default", -- RW
-    neighbourhood_number text COLLATE pg_catalog."default", -- RT
+    hamlet_number_id text COLLATE pg_catalog."default", -- RW
+    neighbourhood_number_id text COLLATE pg_catalog."default", -- RT
     date timestamp with time zone,
     price double,
     description text COLLATE pg_catalog."default",

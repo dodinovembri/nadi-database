@@ -1,9 +1,9 @@
--- Table: public.currency
+-- Table: public.state_province
 
--- DROP TABLE IF EXISTS public.currency;
+-- DROP TABLE IF EXISTS public.state_province;
 
-DROP TABLE IF EXISTS public.currency;
-CREATE TABLE IF NOT EXISTS public.currency
+DROP TABLE IF EXISTS public.state_province;
+CREATE TABLE IF NOT EXISTS public.state_province
 (
     id character varying(36) COLLATE pg_catalog."default" NOT NULL,
     status smallint,
@@ -12,19 +12,14 @@ CREATE TABLE IF NOT EXISTS public.currency
     modified_at timestamp with time zone,
     creator_id character varying(36) COLLATE pg_catalog."default",
     modifier_id character varying(36) COLLATE pg_catalog."default",
-    currency_code character varying(3) COLLATE pg_catalog."default",
-    currency_name text COLLATE pg_catalog."default",
-    currency_symbol text COLLATE pg_catalog."default",
-    numeric_code character varying(3) COLLATE pg_catalog."default",
-    minor_unit smallint,
-    minor_unit_name text COLLATE pg_catalog."default",
-    standard_precision smallint,
-    price_precision smallint,
-    position text COLLATE pg_catalog."default",
-    CONSTRAINT currency_pkey PRIMARY KEY (id)
+    state_province_code character varying(16) COLLATE pg_catalog."default",
+    state_province_name text COLLATE pg_catalog."default",
+    state_province_category_id character varying(36) COLLATE pg_catalog."default",
+    country_id character varying(36) COLLATE pg_catalog."default",
+    CONSTRAINT state_province_pkey PRIMARY KEY (id)
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE IF EXISTS public.currency
-    OWNER to sa;
+ALTER TABLE IF EXISTS public.state_province
+    OWNER to postgres;

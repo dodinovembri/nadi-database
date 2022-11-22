@@ -2,6 +2,7 @@
 
 -- DROP TABLE IF EXISTS public.city;
 
+DROP TABLE IF EXISTS public.city;
 CREATE TABLE IF NOT EXISTS public.city
 (
     id character varying(36) COLLATE pg_catalog."default" NOT NULL,
